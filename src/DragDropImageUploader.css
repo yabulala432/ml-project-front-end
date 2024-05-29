@@ -1,0 +1,142 @@
+body {
+  box-sizing: border-box;
+  margin-top: 40px;
+  padding: 0;
+
+  overflow: hidden;
+}
+
+.mainContainer {
+  /* position: absolute; */
+  /* top: 50%;  */
+  /* left: 50%;
+  transform: translateX(-50%); */
+  /* width: 100%; */
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+  padding: 12px;
+}
+
+.card {
+  /* flex: 1; */
+  height: 400px;
+  width: 49%;
+  padding: 10px;
+
+  border-radius: 5px;
+  margin-top: 16px;
+  /* overflow: hidden; */
+  border: 4px #581c1c solid;
+  box-shadow: #581c1c;
+}
+
+.card .top {
+  text-align: center;
+}
+
+.card p {
+  font-weight: bold;
+  color: #581c1c;
+}
+.card button {
+  outline: 0;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 8px 13px;
+  background: #581c1c;
+}
+.card .drag-area {
+  width: 80%;
+  height: 150px;
+  border-radius: 5px;
+  border: 2px dashed #581c1c;
+  color: #581c1c;
+  background: #f4f3f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-top: 10px;
+}
+.card .drag-area .visible {
+  font-size: 18px;
+}
+.card .select {
+  color: #bf4b4b;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: 0.5sec;
+}
+
+.card .select:hover {
+  /* width: 100%; */
+  height: auto;
+  justify-content: flex-start;
+  align-items: wrap;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.card,
+.container,
+.image {
+  margin-right: 5px;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card .container .image img {
+  width: 100%;
+  /* height: 100%; */
+  /* border-radius: 5px; */
+}
+.card .container .image span {
+  position: absolute;
+  top: -2px;
+  right: 9px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.card input,
+.card .drag-area .on-drop,
+.card .drag-area.dragover .visible {
+  display: none;
+}
+
+.delete {
+  z-index: 999;
+  color: white;
+  cursor: pointer;
+}
+
+.imageContainer {
+  /* background-color: red; */
+  /* width: 100px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.result-container {
+  /* flex: 1; */
+  background-color: rgb(88, 28, 28);
+  height: 420px;
+  width: 49%;
+  /* padding: 10px; */
+  box-shadow: 0 0 5px #c27b7b;
+  border-radius: 5px;
+  overflow: hidden;
+}

@@ -71,7 +71,7 @@ function App() {
       </div>
 
       <a
-        href="https://docs.google.com/document/u/0/"
+        href="https://docs.google.com/document/d/19XVQS1TXBv1Mj4BN4qkQTTz1W5ao8FwfgUUwO2X_6cs/edit?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >

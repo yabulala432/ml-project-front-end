@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   padding: 0;
 
   overflow: hidden;
@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 16px;
+  /* margin: 16px; */
   padding: 12px;
 }
 
@@ -27,7 +27,7 @@ body {
   padding: 10px;
 
   border-radius: 5px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
   /* overflow: hidden; */
   border: 4px #581c1c solid;
   box-shadow: #581c1c;

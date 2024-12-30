@@ -3,19 +3,15 @@
 </p>
 
 <p align="center">
-   <em>Designed for simplicity, customization, and developer productivity.</em>
+   <em>Software Cofiguration Management Group **ASSIGNMENT**, Designed for simplicity, easy to understand, and developer productivity.</em>
 </p>
 
 <p align="center">
-	<a href="https://github.com/eli64s/readme-ai/actions">
-			<img src="https://img.shields.io/github/actions/workflow/status/eli64s/readme-ai/release-pipeline.yml?logo=githubactions&label=CICD&logoColor=white&color=4169E1" alt="github-actions">
+
 	</a>
 	<a href="https://app.codecov.io/gh/eli64s/readme-ai">
 		<img src="https://img.shields.io/codecov/c/github/eli64s/readme-ai?logo=codecov&logoColor=white&label=Coverage&color=5D4ED3" alt="codecov">
-	</a>
-	<a href="https://pypi.python.org/pypi/readmeai/">
-			<img src="https://img.shields.io/pypi/v/readmeai?logo=Python&logoColor=white&label=PyPI&color=7934C5" alt="pypi-version">
-	</a>
+
 	<a href="https://www.pepy.tech/projects/readmeai">
 			<img src="https://img.shields.io/pepy/dt/readmeai?logo=PyPI&logoColor=white&label=Downloads&color=9400D3" alt="pepy-total-downloads">
 	</a>
@@ -26,10 +22,10 @@
 
 ---
 
-## ��� Quick Links
+## 🔗 Quick Links
 
-- [��� Quick Links](#-quick-links)
-- [��� Overview](#-overview)
+- [🔗 Quick Links](#-quick-links)
+- [🔮 Overview](#-overview)
 - [👾 Demo](#-demo)
 - [Watch the video](#watch-the-video)
 - [☄️ Features](#️-features)
@@ -42,7 +38,9 @@
 
 ---
 
-## ��� Overview
+## 🔮 Overview
+
+This project is the frontend for an ML-powered application, built using React, TypeScript, and Vite for a modern, fast, and scalable development experience. It provides an intuitive and responsive user interface for interacting with machine learning models, visualizing predictions, and managing datasets
 
 ---
 
@@ -50,7 +48,7 @@
 
 **Running directly in our browser:**
   
-[Watch the video](./video.mp4)
+[Watch the DEMO video](./video.mkv)
 ---
 
 ## ☄️ Features

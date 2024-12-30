@@ -7,11 +7,8 @@
 </p>
 
 <p align="center">
-
-	</a>
 	<a href="https://app.codecov.io/gh/eli64s/readme-ai">
 		<img src="https://img.shields.io/codecov/c/github/eli64s/readme-ai?logo=codecov&logoColor=white&label=Coverage&color=5D4ED3" alt="codecov">
-
 	<a href="https://www.pepy.tech/projects/readmeai">
 			<img src="https://img.shields.io/pepy/dt/readmeai?logo=PyPI&logoColor=white&label=Downloads&color=9400D3" alt="pepy-total-downloads">
 	</a>
@@ -34,7 +31,7 @@
 - [Notes](#notes)
 
 > [!IMPORTANT]
-> ✨ Visit the [Literature Documentation][mkdocs] for detailed guides and tutorials.
+> ✨ Visit the [Literature Documentation](./Literature%20review%20.pdf) for detailed guides and tutorials.
 
 ---
 

@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import "./DragDropImageUploader.css";
 import { useState, useRef } from "react";
 
@@ -8,7 +6,7 @@ import axios from "axios";
 function DragDropImageUploader() {
   const url = "http://your-upload-endpoint";
   const [images, setImages] = useState<any>([]);
-  const [isDragging] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   function selectFiles() {
@@ -81,15 +79,7 @@ function DragDropImageUploader() {
     <div className="mainContainer">
       <div className="card">
         <div className="top">
-          <p
-            style={{
-              fontSize: 30,
-              fontWeight: "bold",
-              color: "white",
-            }}
-          >
-            Cat or Dog ?
-          </p>
+          <p>Cat or Dog ?</p>
         </div>
         <div className="drag-area">
           {isDragging ? (
@@ -215,3 +205,63 @@ function DragDropImageUploader() {
 }
 
 export default DragDropImageUploader;
+
+/** 
+function handleFileUpload(event: React.ChangeEvent<HTMLInputElement>) {
+    // Prevent default behavior
+    event.preventDefault();
+
+    const files = event.target.files;
+    if (!files || files.length === 0) return;
+
+    const formData = new FormData();
+
+    // Loop through selected files
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+
+      // Check if file is an image
+      if (file.type.split("/")[0] !== "image") {
+        console.log("file is not an image");
+        continue;
+      }
+
+      // Check if image already exists using filename comparison
+      if (!images.some((e: any) => e.name === file.name)) {
+        formData.append("images", file); // Append image file to FormData
+
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+
+        reader.onload = (e) => {
+          // Update state for image preview (optional)
+          setImages((prevImages: any) => [
+            ...prevImages,
+            {
+              name: file.name,
+              url: e.target?.result, // Data URL for preview
+            },
+          ]);
+        };
+      } else {
+        console.log(`${file.name} already exists.`);
+      }
+    }
+
+    // Send images to server using Axios
+    axios
+      .post("url", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data", // Required for image uploads
+        },
+      })
+      .then((response) => {
+        console.log("Images uploaded successfully:", response.data);
+        // Handle successful upload (e.g., clear state, display success message)
+      })
+      .catch((error) => {
+        console.error("Error uploading images:", error);
+        // Handle upload error (e.g., display error message)
+      });
+  } 
+*/

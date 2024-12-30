@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Project Setup Instructions
 
-Currently, two official plugins are available:
+#### Prerequisites
+- Node.js installed (v16 or above recommended)
+- npm installed 
+- Git installed
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+### Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Clone the Repository**  
+   Open your terminal and run:
+   ```bash
+   git clone https://github.com/yabulala432/ml-project-front-end.git
+   cd ml-project-front-ende
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+2. **Install Dependencies**  
+   Install the required packages:
+   ```bash
+   npm install
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+3. **Start the Development Server**  
+   Run the following command to start the Vite development server:
+   ```bash
+   npm run dev
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+4. **Open the Application**  
+   Open your browser and navigate to the URL displayed in the terminal (usually `http://localhost:5173`).
+
+---
+
+### Notes
+- **TypeScript and React**: The project uses TypeScript for type safety and React for building user interfaces.
+- **Vite**: Vite is used for lightning-fast development and builds.
+- **Development Scripts**:
+  - `npm run dev`: Starts the development server.
+  - `npm run build`: Builds the project for production.
+  - `npm run preview`: Previews the production build.
+

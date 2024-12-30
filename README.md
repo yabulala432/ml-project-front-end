@@ -115,3 +115,14 @@
   - `npm run dev`: Starts the development server.
   - `npm run build`: Builds the project for production.
   - `npm run preview`: Previews the production build.
+
+
+# Contributors
+
+| Name                | ID            |
+|---------------------|---------------|
+| Solomon Belay       | ETS1186/13    |
+| Yihune Zewdie      | ETS1318/13    |
+| Yeabsira Yonas     | ETS1302/13    |
+| Yididiya Amare     | ETS1312/13    |
+| Yodit Tamirat      | ETS1330/13    |
